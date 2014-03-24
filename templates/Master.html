@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{template "Title" .}}</title>
+        <meta name="description" content="Landscape Material and Bark Blowing in Medford and Southern Oregon. Call Ground Control Inc. {{template "phone-simple"}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!-- Add your site or application content here -->
+        <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Ground Control <small>Southern Oregon</small></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="/Contact.html">Contact</a></li>
+                        <li><a href="/Gallery.html">Gallery</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+        <div class="container">
+        	{{template "Body" .}}
+        </div>
+
+        <footer>
+            <p class="text-center"><strong>&copy; Ground Control Southern Oregon LLC / Medford, Oregon / {{template "phone"}} / All Rights Reserved</strong></p>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="/js/vendor/bootstrap.min.js"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UX-0000');ga('send','pageview');
+        </script>
+    </body>
+</html>
