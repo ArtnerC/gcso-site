@@ -15,33 +15,33 @@
     <body>
         <!-- Add your site or application content here -->
         <header>
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-static-top gc-nav" role="navigation">
+            <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Ground Control <small>Southern Oregon</small></a>
+                    <a class="navbar-brand" href="/"><strong>Ground Control <small>Southern Oregon</small></strong></a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="/Contact.html">Contact</a></li>
-                        <li><a href="/Gallery.html">Gallery</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li {{if isTemplate "Index.html"}}class="active"{{end}}><a href="/Index.html">Home</a></li>
+                        <li {{if isTemplate "Contact.html"}}class="active"{{end}}><a href="/Contact.html">Contact</a></li>
+                        <li {{if isTemplate "Gallery.html"}}class="active"{{end}}><a href="/Gallery.html">Gallery</a></li>
+                        <li {{if isTemplate "Bark.html"}}class="active"{{end}}><a href="/Bark.html">Services</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         </header>
 
-        <div class="container">
-        	{{template "Body" .}}
-        </div>
+        {{template "Body" .}}
 
-        <footer>
+        <footer class="container">
+            <hr>
             <p class="text-center"><strong>&copy; Ground Control Southern Oregon LLC / Medford, Oregon / {{template "phone"}} / All Rights Reserved</strong></p>
         </footer>
 
@@ -57,7 +57,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UX-0000');ga('send','pageview');
+            ga('create','UA-24202156-3');ga('send','pageview');
         </script>
     </body>
 </html>
