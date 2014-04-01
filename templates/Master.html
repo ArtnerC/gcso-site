@@ -8,56 +8,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+        <!--<link rel="stylesheet" href="/css/bootstrap-theme.min.css">-->
         <link rel="stylesheet" href="/css/main.css">
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <!-- Add your site or application content here -->
-        <header>
-        <nav class="navbar navbar-default navbar-static-top gc-nav" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/"><strong>Ground Control <small>Southern Oregon</small></strong></a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li {{if isTemplate "Index.html"}}class="active"{{end}}><a href="/Index.html">Home</a></li>
-                        <li {{if isTemplate "Contact.html"}}class="active"{{end}}><a href="/Contact.html">Contact</a></li>
-                        <li {{if isTemplate "Gallery.html"}}class="active"{{end}}><a href="/Gallery.html">Gallery</a></li>
-                        <li {{if isTemplate "Bark.html"}}class="active"{{end}}><a href="/Bark.html">Services</a></li>
-                    </ul>
-                </div>
+    <!-- Add your site or application content here -->
+    <header class="container">
+        <nav class="navbar navbar-inverse gc-nav" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><strong>Ground Control <small>Southern Oregon</small></strong></a>
             </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li {{if isTemplate "Index.html"}}class="active"{{end}}><a href="/Index.html">Home</a></li>
+                    <li {{if isTemplate "Contact.html"}}class="active"{{end}}><a href="/Contact.html">Contact</a></li>
+                    <li {{if isTemplate "Gallery.html"}}class="active"{{end}}><a href="/Gallery.html">Gallery</a></li>
+                    <li {{if isTemplate "Bark.html"}}class="active"{{end}}><a href="/Bark.html">Services</a></li>
+                </ul>
+            </div>            
         </nav>
-        </header>
+    </header>
 
-        {{template "Body" .}}
+    <main class="container">
+    {{template "Body" .}}
+    </main>
 
-        <footer class="container">
-            <hr>
-            <p class="text-center"><strong>&copy; Ground Control Southern Oregon LLC / Medford, Oregon / {{template "phone"}} / All Rights Reserved</strong></p>
-        </footer>
+    <footer class="container">
+        <hr>
+        <p class="text-center"><strong>&copy; Ground Control Southern Oregon LLC / Medford, Oregon / {{template "phone"}} / All Rights Reserved</strong></p>
+    </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="/js/vendor/bootstrap.min.js"></script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/main.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js"></script>
 
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-24202156-3');ga('send','pageview');
-        </script>
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-24202156-3');ga('send','pageview');
+    </script>
     </body>
 </html>

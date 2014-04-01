@@ -12,23 +12,41 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-.gc-nav {
-    margin-bottom: 0;
-    /*border-bottom: 0;*/
-}
-
 body {
     background: url(/img/grass-lawn.jpg);
-    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 body > * {
     background-color: rgba(0,0,0,0.65);
 }
 
+header {
+    padding-top: 20px;
+}
+
+.gc-nav {
+    margin-bottom: 20px;
+}
+
+.carousel-wrap {
+    padding: 6px;
+}
+
 #carousel-main {
     max-width: 841px;
+}
+
+.gc-call {
+    margin: 10px 0;
+    padding-bottom: 6px;
+}
+
+.gc-call h2 {
+    margin: 0;
 }
 
 .gc-call .label {
@@ -40,6 +58,13 @@ body > * {
 .phone-link + small {
     color: inherit;
     text-decoration: none;
+}
+
+.overlay-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .overlay-guy {
@@ -61,7 +86,80 @@ body > .container > .row > div {
     margin-bottom: 8px;
 }
 
+.gc-menu {
+    margin: 20px 0 15px 0;
+}
+
+.gc-menu .col-md-4 {
+
+}
+
+.well {
+    background: inherit;
+    background-color: rgba(0,0,0,0.50);
+    border-color: rgba(0,0,0,0.90);
+}
+
+.gc-menu-item {
+    position: relative;
+}
+
+.gc-menu-item a {
+    color: #DFDFDF;
+}
+
+.gc-menu-item a:hover {
+    color: #FFFFFF;
+}
+
+.gc-menu-item h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.75);
+    padding: 12px;
+    margin: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 body footer {
     /*margin: 8px;*/
     padding: 6px;
+}
+
+
+@media (max-width: 768px) {
+
+    header.container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .gc-nav {
+        margin-bottom: 0;
+    }
+
 }
