@@ -32,6 +32,10 @@ header {
     margin-bottom: 20px;
 }
 
+.page-header {
+    margin-top: 20px;
+}
+
 .carousel-wrap {
     padding: 6px;
 }
