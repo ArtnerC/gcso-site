@@ -154,6 +154,23 @@ body footer {
     padding: 6px;
 }
 
+@media (min-width: 992px) {
+    .container-md-height {
+        display: table;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .row-md-height {
+        display: table-row;
+    }
+
+    .col-md-height {
+        padding-bottom: 0;
+        display: table-cell;
+        float: none;
+    }
+}
 
 @media (max-width: 768px) {
 
