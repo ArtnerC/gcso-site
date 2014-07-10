@@ -98,6 +98,14 @@ body > .container > .row > div {
 
 }
 
+.gc-menu li {
+    line-height: 1.75em;
+}
+
+.gc-menu li a {
+    font-size: 1.25em;
+}
+
 .well {
     background: inherit;
     background-color: rgba(0,0,0,0.50);
@@ -128,6 +136,10 @@ body > .container > .row > div {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 
+}
+
+.gallery a {
+    padding: 5px;
 }
 
 .video-container {
