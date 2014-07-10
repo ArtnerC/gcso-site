@@ -22,3 +22,6 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+$(function () {
+    $('.gallery a, a[rel="lightbox"]').fluidbox();
+})
