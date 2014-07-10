@@ -1,0 +1,105 @@
+{{define "Title"}}Contact{{end}}
+
+{{define "Body"}}
+<div class="row">
+	<div class="col-md-8">
+	<div class="well">
+
+		<h1 class="page-header text-primary">Contact</h1>
+		<p class="lead">Use the form below or give us a call!</p>
+
+		<form class="form-horizontal" role="form" method="post" enctype="text/plain" action="mailto:GroundControlSO@gmail.com?subject=Website+Question/Comment">
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Name</label>
+				<div class="col-sm-5">
+					<label class="sr-only" for="InputFirstName">First Name</label>
+					<input type="text" class="form-control" id="InputFirstName" name="FirstName" placeholder="First">
+				</div>
+				<div class="col-sm-5">
+					<label class="sr-only" for="InputLastName">Last Name</label>
+					<input type="text" class="form-control" id="InputLastName" name="LastName" placeholder="Last">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="InputPhone" class="col-sm-2 control-label">Phone</label>
+				<div class="col-sm-10">
+					<input type="tel" class="form-control" id="InputPhone" name="Phone" placeholder="541-555-5555">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="InputEmail" class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="InputEmail" name="Email" placeholder="name@example.com">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Check all that apply</label>
+				<div class="col-sm-10">
+					<div class="checkbox">
+						<label class="col-sm-12 ">
+							<input type="checkbox" id="CheckboxProductQuestion" name="RequestType" value="Question about a product">
+							I have a question about a product.
+						</label>
+					</div>
+					<div class="checkbox">
+						<label class="col-sm-12 ">
+							<input type="checkbox" id="CheckboxDelivery" name="RequestType" value="Schedule a delivery">
+							I would like to schedule a delivery.
+						</label>
+					</div>
+					<div class="checkbox">
+						<label class="col-sm-12 ">
+							<input type="checkbox" id="CheckboxEstimate" name="RequestType" value="Free Estimate">
+							Need a FREE estimate.
+						</label>
+					</div>
+					<div class="checkbox">
+						<label class="col-sm-12 ">
+							<input type="checkbox" id="CheckboxOther" name="RequestType" value="Other Question or Comment">
+							Other
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="TextComment" class="col-sm-2 control-label">Questions/Comments</label>
+				<div class="col-sm-12">
+					<textarea class="form-control" name="Comment" id="TextComment" rows="5"></textarea>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-4 col-sm-offset-4 text-center">
+					<button type="submit" value="Send" class="btn btn-primary btn-block">Submit</button>
+				</div>
+			</div>
+
+		</form>
+
+	</div>
+	</div>
+	<div class="col-md-4">
+	<div class="well">
+
+		<div class="gc-call"><a class="btn btn-danger btn-lg btn-block" href="tel:5417762275"><strong>Call 541-776-BARK</strong> <small>(2275)</small></a></div>
+
+		<h4><a href="mailto:GroundControlSO@gmail.com">GroundControlSO@gmail.com</a></h4>
+		<hr>
+		<h3>Visit Our Retail Yard:</h3>
+		<p class="lead">
+			  6351 Blackwell Road<br>
+			  Central Point, OR 97502<br><br>
+			  <small><a class="btn btn-primary" target="window" href="https://www.google.com/maps/place/Ground+Control+Southern+Oregon+LLC/@42.408374,-122.944783,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x18bf5e3c247e983d">Get Directions</a></small>
+		</p>
+		<a target="window" href="https://www.google.com/maps/place/Ground+Control+Southern+Oregon+LLC/@42.408374,-122.944783,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x18bf5e3c247e983d">
+			<img class="img-rounded img-responsive center-block" src="/img/GC-Map.jpg" alt="Map to Ground Control">
+		</a>
+
+	</div>
+	</div>
+</div>
+{{end}}
