@@ -111,9 +111,38 @@ body > .container > .row > div {
     border-color: rgba(0,0,0,0.90);
 }
 
-.gallery a {
-    padding: 5px;
+.thumbnail img,
+.thumbnail a img {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4px;
 }
+
+.thumbnail img:last-child,
+.thumbnail a:last-child img {
+    margin-bottom: 0;
+}
+
+.thumbnail {
+    background-color: rgba(255,255,255,0.50);
+}
+
+.thumbnail .caption {
+  color: #000000;
+}
+
+.list-group-item {
+    background-color: rgba(255,255,255,0.75);
+    color: #000000;
+}
+
+/*.gallery a {
+    padding: 5px;
+}*/
 
 .thing {margin-top: 15px;}
 
