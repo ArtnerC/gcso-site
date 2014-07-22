@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{{template "Title" .}} - Ground Control Southern Oregon</title>
         <meta name="description" content="Landscape Material and Bark Blowing in Medford and Southern Oregon. Call Ground Control Inc. {{template "phone-simple"}}">
-        <meta property="og:title" content="">
-        <meta property="og:description" content="">
-        <meta property="og:image" content="">
+        <meta property="og:title" content="{{template "Title" .}}">
+        <meta property="og:description" content="Landscape Material and Bark Blowing in Medford and Southern Oregon. Call Ground Control Inc. {{template "phone-simple"}}">
+        <meta property="og:image" content="/img/Ground-Control-Landscape-Supply.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -27,7 +27,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><strong>Ground Control <small>Southern Oregon</small></strong></a>
+                <a class="navbar-brand" href="/"><strong>Ground Control</small></strong></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -38,13 +38,37 @@
                             <li {{if isTemplate "Bark.html"}}class="active"{{end}}><a href="/Bark.html">Bark Mulch</a></li>
                             <li {{if isTemplate "Topsoil-Blends.html"}}class="active"{{end}}><a href="/Topsoil-Blends.html">Topsoil Blends</a></li>
                             <li {{if isTemplate "Rock-Sand.html"}}class="active"{{end}}><a href="/Rock-Sand.html">Rock &amp; Sand</a></li>
-                            <li {{if isTemplate "Boulders-Rock.html"}}class="active"{{end}}><a href="/Boulders-Rock.html">Decorative Rock &amp; Boulders</a></li>
-                            <li {{if isTemplate "Garden-Supplies.html"}}class="active"{{end}}><a href="/Garden-Supplies.html">Garden Supplies</a></li>
+                            <li {{if isTemplate "Boulders-Rock.html"}}class="active"{{end}}><a href="/Boulders-Rock.html">Rocks &amp; Boulders</a></li>
+                            <li {{if isTemplate "Garden-Supplies.html"}}class="active"{{end}}><a href="/Garden-Supplies.html">Fertilizer</a></li>
                         </ul>
                     </li>
 
-                    <li {{if isTemplate "Residential.html"}}class="active"{{end}}><a href="/Residential.html">Residential</a></li>
-                    <li {{if isTemplate "Commercial.html"}}class="active"{{end}}><a href="/Commercial.html">Commercial</a></li>
+                    <!--<li {{if isTemplate "Residential.html"}}class="active"{{end}}><a href="/Residential.html">Residential</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Residential <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li {{if isTemplate "Delivery-Services.html"}}class="active"{{end}}><a href="/Delivery-Services.html">Delivery Services</a></li>
+                            <li {{if isTemplate "Bark-Blowing.html"}}class="active"{{end}}><a href="/Bark-Blowing.html">Bark Blowing</a></li>
+                            <li {{if isTemplate "Lawn-Installation.html"}}class="active"{{end}}><a href="/Lawn-Installation.html">Lawn Installation</a></li>
+                            <li {{if isTemplate "Concrete.html"}}class="active"{{end}}><a href="/Concrete.html">Concrete</a></li>
+                            <li {{if isTemplate "Erosion-Control.html"}}class="active"{{end}}><a href="/Erosion-Control.html#Vegetative-Retaining-Walls">Vegetative Retaining Walls</a></li>
+                            <li {{if isTemplate "Excavation.html"}}class="active"{{end}}><a href="/Excavation.html">Excavation Services</a></li>
+                        </ul>
+                    </li>
+
+                    <!--<li {{if isTemplate "Commercial.html"}}class="active"{{end}}><a href="/Commercial.html">Commercial</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commercial <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li {{if isTemplate "Bark-Blowing.html"}}class="active"{{end}}><a href="/Bark-Blowing.html">Blower Truck</a></li>
+                            <li {{if isTemplate "Excavation.html"}}class="active"{{end}}><a href="/Excavation.html">Excavation Services</a></li>
+                            <li {{if isTemplate "Wholesale-Material.html"}}class="active"{{end}}><a href="/Wholesale-Material.html">Wholesale Bulk</a></li>
+                            <li {{if isTemplate "Bagging.html"}}class="active"{{end}}><a href="/Bagging.html">Bagging &amp; Materials</a></li>
+                            <li {{if isTemplate "Trucking.html"}}class="active"{{end}}><a href="/Trucking.html">Trucking</a></li>
+                            <li {{if isTemplate "Erosion-Control.html"}}class="active"{{end}}><a href="/Erosion-Control.html">Erosion Control</a></li>
+                        </ul>
+                    </li>
+
                     <li {{if isTemplate "Gallery.html"}}class="active"{{end}}><a href="/Gallery.html">Gallery</a></li>
                     <li {{if isTemplate "Contact.html"}}class="active"{{end}}><a href="/Contact.html">Contact</a></li>
                 </ul>
@@ -61,8 +85,8 @@
         <p class="text-center"><strong>&copy; Ground Control Southern Oregon LLC / Medford, Oregon / {{template "phone"}} / All Rights Reserved</strong></p>
     </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
     <script src="/js/vendor/bootstrap.min.js"></script>
     <script src="/js/vendor/jquery.fluidbox.min.js"></script>
     <script src="/js/plugins.js"></script>
