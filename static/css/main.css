@@ -111,8 +111,10 @@ body > .container > .row > div {
     border-color: rgba(0,0,0,0.90);
 }
 
-.thumbnail img,
-.thumbnail a img {
+.thumbnail > img,
+.thumbnail a > img,
+.thumbnail > .fluidbox-wrap > img,
+.thumbnail a > .fluidbox-wrap > img {
   display: block;
   width: 100% \9;
   max-width: 100%;
@@ -122,8 +124,9 @@ body > .container > .row > div {
   margin-bottom: 4px;
 }
 
-.thumbnail img:last-child,
-.thumbnail a:last-child img {
+.thumbnail a:last-child img,
+a.thumbnail:only-of-type > .fluidbox-wrap > img,
+.thumbnail a:only-of-type img {
     margin-bottom: 0;
 }
 
