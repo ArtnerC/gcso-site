@@ -12,6 +12,17 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@font-face {
+    font-family: 'AntiqueOliNorD-Reg';
+    src: url('../fonts/antique-olive-nord-d.eot');
+    src: url('../fonts/antique-olive-nord-d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/antique-olive-nord-d.woff') format('woff'),
+         url('../fonts/antique-olive-nord-d.ttf') format('truetype'),
+         url('../fonts/antique-olive-nord-d.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     height: 100%;
     min-height: 100%;
@@ -42,8 +53,17 @@ header {
     margin-top: 5px;
 }
 
+.text-brand {
+    font-family: 'AntiqueOliNorD-Reg', Helvetica, Arial, Sans-Serif;
+    color: #BCBDC1;
+    text-shadow: 0px 3px 0px black;
+
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+}
+
 .navbar-brand {
-    font-family: "Arial Black";
+
 }
 
 .carousel-wrap {
