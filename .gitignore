@@ -218,5 +218,6 @@ pip-log.txt
 ## Project
 #############
 generated/
+pages/
 *.sublime-project
 *.sublime-workspace
