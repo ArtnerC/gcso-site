@@ -53,17 +53,38 @@ header {
     margin-top: 5px;
 }
 
-.text-brand {
+.text-brand, .text-phone,
+.text-brand a, .text-phone a,
+.text-brand a:hover, .text-phone a:hover {
     font-family: 'AntiqueOliNorD-Reg', Helvetica, Arial, Sans-Serif;
     color: #BCBDC1;
+    text-decoration: none;
     text-shadow: 0px 3px 0px black;
 
     -webkit-text-stroke: 1px black;
     text-stroke: 1px black;
+
+    margin: 10px;
+}
+
+.text-phone,
+.text-phone a,
+.text-phone a:hover {
+    color: #ED1C24;
+    text-shadow: none;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+}
+
+.brand-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .navbar-brand {
-
+    position: relative;
 }
 
 .carousel-wrap {
