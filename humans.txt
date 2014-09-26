@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Casey Artner -- Designer/Developer -- @ArtnerC
+
+# THANKS
+
+    Jason Artner
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
+    Bootstrap, jQuery Fluidbox
