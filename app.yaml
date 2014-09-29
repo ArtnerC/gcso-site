@@ -5,19 +5,27 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /css
+  static_dir: static/css
+
+- url: /fonts
+  static_dir: static/fonts
+
+- url: /img
+  static_dir: static/img
+
+- url: /js
+  static_dir: static/js
+
+- url: /humans\.txt
+  static_files: static/humans\.txt
+
 - url: /
-  script: generated/index.html
-
-- url: /index\.html
-  script: generated/index.html
-
-- url: /(.*\.(html))$
-  static_files: generated/\1
-  upload: static/.*\.(html)$
+  static_dir: generated
 
 - url: /(.*\.(gif|png|jpg|css|html|xml|ico|txt|js|eot|svg|ttf|woff))$
   static_files: static/\1
   upload: static/.*\.(gif|png|jpg|css|html|xml|ico|txt|js|eot|svg|ttf|woff)$
 
 - url: /.*
-  script: static/404.html
+  static_files: static/404.html
