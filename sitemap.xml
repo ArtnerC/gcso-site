@@ -1,11 +1,72 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>http://www.groundcontrolso.com/</loc>
-		<lastmod></lastmod>
-		<changefreq></changefreq>
-		<priority></priority>
-	</url>
 
+<url>
+  <loc>http://groundcontrolso.com/</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Bark.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Topsoil-Blends.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Rock-Sand.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Boulders-Rock.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Garden-Supplies.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Delivery-Services.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Bark-Blowing.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Lawn-Installation.html</loc>
+  <lastmod>2014-09-29T13:32:24+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Concrete.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Erosion-Control.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Excavation.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Wholesale-Material.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Bagging.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Trucking.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Gallery.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://groundcontrolso.com/Contact.html</loc>
+  <lastmod>2014-09-29T13:32:25+00:00</lastmod>
+</url>
 </urlset>
