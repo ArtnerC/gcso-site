@@ -1,0 +1,23 @@
+application: ground-control-714
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: generated/index.html
+
+- url: /index\.html
+  script: generated/index.html
+
+- url: /(.*\.(html))$
+  static_files: generated/\1
+  upload: static/.*\.(html)$
+
+- url: /(.*\.(gif|png|jpg|css|html|xml|ico|txt|js|eot|svg|ttf|woff))$
+  static_files: static/\1
+  upload: static/.*\.(gif|png|jpg|css|html|xml|ico|txt|js|eot|svg|ttf|woff)$
+
+- url: /.*
+  script: static/404.html
