@@ -13,20 +13,20 @@
         <!-- Schema.org for Google and Google+ -->
         <meta itemprop="name" content="{{template "Title" .}} - Ground Control">
         <meta itemprop="description" content="Landscape Material and Bark Blowing in Medford and Southern Oregon. Call Ground Control Inc. {{template "phone-simple"}}">
-        <meta itemprop="image" content="http://test.groundcontrolso.com/img/Ground-Control-Icon-Big.jpg">
+        <meta itemprop="image" content="http://www.groundcontrolso.com/img/Ground-Control-Icon-Big.jpg">
 
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@GroundControlSO">
         <meta name="twitter:title" content="{{template "Title" .}} - Ground Control">
         <meta name="twitter:description" content="Landscape Material and Bark Blowing in Medford and Southern Oregon. Call Ground Control Inc. {{template "phone-simple"}}">
-        <meta itemprop="image" content="http://test.groundcontrolso.com/img/Ground-Control-Icon-Big.jpg">
+        <meta itemprop="image" content="http://www.groundcontrolso.com/img/Ground-Control-Icon-Big.jpg">
 
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Ground Control Southern Oregon">
         <meta property="og:title" content="{{template "Title" .}} - Ground Control">
         <meta property="og:description" content="Landscape Material and Bark Blowing in Medford and Southern Oregon. Call Ground Control Inc. {{template "phone-simple"}}">
-        <meta itemprop="image" content="http://test.groundcontrolso.com/img/Ground-Control-Icon-Big.jpg">
+        <meta itemprop="image" content="http://www.groundcontrolso.com/img/Ground-Control-Icon-Big.jpg">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -58,12 +58,13 @@
                 </button>-->
             </div>
             <div class="navbar-collapse-search collapse">
-                <form class="navbar-form" role="search">
+                <gcse:search></gcse:search>
+                <!--<form class="navbar-form" role="search">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search">
                     </div>
                     <button type="submit" class="btn btn-primary center-block">Search Ground Control</button>
-                </form>
+                </form>-->
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -139,6 +140,17 @@
         e.src='//www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-24202156-3', 'auto');ga('require', 'displayfeatures');ga('send','pageview');
+
+        (function() {
+            var cx = '009837481048116567567:73vapklp3z4';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
     </script>
     </body>
 </html>
