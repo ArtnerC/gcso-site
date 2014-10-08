@@ -1,10 +1,22 @@
 application: ground-control-714
 version: 1
-runtime: python27
 api_version: 1
-threadsafe: true
+runtime: python27
+threadsafe: yes
 
 handlers:
+- url: /
+  static_files: generated/index.html
+  upload: generated/index.html
+
+- url: /(.*\.html)
+  static_files: generated/\1
+  upload: generated/(.*\.html)
+
+- url: /(apple-touch-icon-precomposed\.png|favicon\.ico|humans\.txt|robots\.txt|sitemap\.xml)
+  static_files: static/\1
+  upload: static/(apple-touch-icon-precomposed\.png|favicon\.ico|humans\.txt|robots\.txt|sitemap\.xml)
+
 - url: /css
   static_dir: static/css
 
@@ -17,15 +29,6 @@ handlers:
 - url: /js
   static_dir: static/js
 
-- url: /humans\.txt
-  static_files: static/humans\.txt
-
-- url: /
-  static_dir: generated
-
-- url: /(.*\.(gif|png|jpg|css|html|xml|ico|txt|js|eot|svg|ttf|woff))$
-  static_files: static/\1
-  upload: static/.*\.(gif|png|jpg|css|html|xml|ico|txt|js|eot|svg|ttf|woff)$
-
 - url: /.*
   static_files: static/404.html
+  upload: static/404.html
