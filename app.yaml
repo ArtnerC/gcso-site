@@ -32,3 +32,14 @@ handlers:
 - url: /.*
   static_files: static/404.html
   upload: static/404.html
+
+skip_files:
+- \.git/.*
+- pages/.*
+- raw assets/.*
+- templates/.*
+- ^(.*/)?\.gitattributes$
+- ^(.*/)?\.gitignore$
+- ^(.*/)?\.sublime-project$
+- ^(.*/)?\.sublime-workspace$
+- ^(.*/)?\.bat$
